@@ -8,10 +8,16 @@ html {
 
 /* ESTILO DE HEADER */
 
+#menu a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
 .header {
   background-image: url("../img/portada.png");
   background-position: center;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   position: relative;
   opacity: 80%;
@@ -34,30 +40,12 @@ html {
   font-size: 2rem;
 }
 
-nav div {
-  background-color: rgb(21, 51, 107);
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-}
-
-nav div div ul li {
-  list-style-type: none;
-  margin: 2rem;
-  font-size: 1.8rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 nav div div ul li a {
   transition: 0.5s;
-  color: white !important;
 }
 
 nav div div ul li a:hover {
-font-size: 2.2rem;
-color: black !important;
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .tituloPag {
@@ -394,7 +382,7 @@ aside h3 {
 }
 
 .pContacto {
-  margin:0.5rem;
+  margin: 0.5rem;
   padding: 2pt;
   text-align: justify;
   font-size: 10pt;
@@ -501,15 +489,6 @@ aside h3 {
 
 /* MEDIA QUERI PARA CELULAR */
 @media (min-width: 451px) and (max-width: 699px) {
-  /* .header nav ul li a {
-    font-size: 8pt;
-    margin-left: 10px;
-  }
-
-  .tituloHeader {
-    font-size: 18pt;
-  } */
-
   .sectores {
     flex-wrap: wrap;
   }
@@ -719,13 +698,4 @@ aside h3 {
     width: 40px;
     height: auto;
   }
-
-  /* .footer nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 9pt;
-    font-weight: bold;
-    justify-content: center;
-    margin-left: 10px;
-  } */
 }
