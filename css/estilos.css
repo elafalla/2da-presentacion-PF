@@ -1,69 +1,74 @@
 * {
-  margin: 1px;
   padding: 0;
 }
 
-/* FUENTE PRINCIPAL */
 html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
 }
 
 /* ESTILO DE HEADER */
 
-/* .tituloPag {
-  color: grey;
-  font-size: 20pt;
-  border-left: 5px solid blue;
-  padding-top: 10px;
-  padding-left: 2px;
-  margin-left: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-} */
-
 .header {
-  background-image: url('../img/portada.png');
+  background-image: url("../img/portada.png");
   background-position: center;
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   position: relative;
   opacity: 80%;
 }
 
-/* .collapse {
-  background-color: blue;
-} */
-
-/* .header nav div a {
-  text-decoration: none;
-  color: black;
-  font-size: 10pt;
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-.header nav div a:hover {
-  font-size: 12pt;
-  text-decoration: underline;
+.header div {
+  padding-left: 10px;
   color: white;
-} */
-
-/* .navbar-expand-lg {
-padding: 0;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.container-fluid {
-padding: 0;
-} */
+.header div h1 {
+  font-size: 4rem;
+}
 
-.titulo {
-  padding-top: 10px;
-  font-size: 16px;
+.header div p {
+  font-size: 2rem;
+}
+
+nav div {
+  background-color: rgb(21, 51, 107);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav div div ul li {
+  list-style-type: none;
+  margin: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
+nav div div ul li a {
+  transition: 0.5s;
+}
+
+nav div div ul li a:hover {
+font-size: 2.2rem;
+color: white !important;
+text-decoration: underline;
+}
+
+.tituloPag {
+  margin: 1rem;
+  padding-left: 5px;
+  font-size: 2.5rem;
+  border-left: 5px solid rgb(21, 51, 107);
+}
+
 .parrafo {
+  margin: 0.5rem;
   padding: 3pt;
   font-size: 10pt;
   text-align: justify;
@@ -85,8 +90,8 @@ h4 {
 .logo_wapp {
   position: fixed;
   right: 20px;
-  bottom: 260px;
-  opacity: 60%;
+  bottom: 200px;
+  opacity: 70%;
 }
 
 .logo_wapp img {
@@ -94,12 +99,8 @@ h4 {
   height: auto;
 }
 
-.menuBurger {
-  background-color: blue;
-}
-
-.menu {
-  background-color: blue;
+.container footer div {
+  font-size: 1.5rem;
 }
 
 /* EXCLUSIVOS DE INDEX.HTML */
@@ -272,7 +273,7 @@ aside {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto
+  margin: auto;
 }
 
 aside h3 {
@@ -601,7 +602,6 @@ aside h3 {
 
 /* MEDIA QUERI PARA CELULAR MINI */
 @media (max-width: 450px) {
-
   .sectores {
     flex-wrap: wrap;
   }
